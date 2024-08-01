@@ -1,18 +1,15 @@
-import 'expo-router/entry';
-
-/* import React from 'react';
-import { StatusBar } from 'expo-status-bar';
+import React from 'react';
 import { StyleSheet, View, TextInput, ScrollView, SafeAreaView, TouchableOpacity } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import NavBar from './components/NavBar';
-import Listing from './components/Listing';
+import Listing from '../components/Listing';
 
-export default function App() {
+export default function Home() {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.searchContainer}>
-        <TextInput style={styles.searchBar}
-            placeholder="Find your next ballgown..."
+        <TextInput
+          style={styles.searchBar}
+          placeholder="Find your next ballgown..."
         />
         <TouchableOpacity>
           <Ionicons name="filter" size={24} color="black" style={styles.filterIcon} />
@@ -20,16 +17,14 @@ export default function App() {
       </View>
       <ScrollView contentContainerStyle={styles.listingsContainer}>
         <View style={styles.listingRow}>
-            <Listing />
-            <Listing />
-          </View>
-          <View style={styles.listingRow}>
-            <Listing />
-            <Listing />
-          </View>
+          <Listing />
+          <Listing />
+        </View>
+        <View style={styles.listingRow}>
+          <Listing />
+          <Listing />
+        </View>
       </ScrollView>
-      <NavBar />
-      <StatusBar style="auto" />
     </SafeAreaView>
   );
 }
@@ -64,4 +59,4 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     marginBottom: 10,
   },
-}); */
+});
