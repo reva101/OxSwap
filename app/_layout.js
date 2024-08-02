@@ -1,5 +1,5 @@
 import React from 'react';
-import { Stack } from 'expo-router';
+import { Stack, Screen } from 'expo-router';
 import NavBar from '../components/NavBar';
 import { SafeAreaView, StyleSheet} from 'react-native';
 

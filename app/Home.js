@@ -1,4 +1,4 @@
-import React from 'react';
+/* import React from 'react';
 import { StyleSheet, View, TextInput, ScrollView, SafeAreaView, TouchableOpacity } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import Listing from '../components/Listing';
@@ -60,3 +60,4 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
 });
+*/

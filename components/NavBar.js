@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import { Ionicons, AntDesign } from '@expo/vector-icons';
-import { useRouter } from 'expo-router';
+import { useNavigationState, useRouter } from 'expo-router';
 
 const NavBar = () => {
 
@@ -13,17 +13,17 @@ const NavBar = () => {
                 <AntDesign name="home" size={24} color="black" />
                 <Text>Home</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.menuButton} onPress={() => router.push('/Profile')}>
-                <Ionicons name="person-circle-outline" size={24} color="black" />
-                <Text>Profile</Text>
+            <TouchableOpacity style={styles.menuButton} onPress={() => router.push('/Favourites')}>
+                <Ionicons name="heart-circle-outline" size={24} color="black" />
+                <Text>Favourites</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.menuButton} onPress={() => router.push('/Messages')}>
                 <Ionicons name="chatbubbles-outline" size={24} color="black" />
                 <Text>Messages</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.menuButton} onPress={() => router.push('/Favourites')}>
-                <Ionicons name="heart-circle-outline" size={24} color="black" />
-                <Text>Favourites</Text>
+            <TouchableOpacity style={styles.menuButton} onPress={() => router.push('/Profile')}>
+                <Ionicons name="person-circle-outline" size={24} color="black" />
+                <Text>Profile</Text>
             </TouchableOpacity>
         </View>
     )
