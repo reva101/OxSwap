@@ -1,22 +1,31 @@
 import React from 'react';
-import { Stack, Screen } from 'expo-router';
-import NavBar from '../components/NavBar';
-import { SafeAreaView, StyleSheet} from 'react-native';
+import { Tabs } from 'expo-router';
+import { Ionicons, AntDesign } from '@expo/vector-icons';
 
-const Layout = () =>  {
+const Layout = () => {
   return (
-    <SafeAreaView style={styles.container}>
-      <Stack />
-      <NavBar />
-    </SafeAreaView>
-  );
-}
+    <Tabs
+      screenOptions={({ route }) => ({
+        tabBarIcon: ({ color, size }) => {
+          let iconName;
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-  },
-});
+          if (route.name === 'index') {
+            iconName = 'home';
+            return <AntDesign name={iconName} size={size} color={color} />;
+          } else if (route.name === 'Profile') {
+            iconName = 'person-circle-outline';
+            return <Ionicons name={iconName} size={size} color={color} />;
+          } else if (route.name === 'Messages') {
+            iconName = 'chatbubbles-outline';
+            return <Ionicons name={iconName} size={size} color={color} />;
+          } else if (route.name === 'Favourites') {
+            iconName = 'heart-circle-outline';
+            return <Ionicons name={iconName} size={size} color={color} />;
+          }
+        },
+      })}
+    />
+  );
+};
 
 export default Layout;

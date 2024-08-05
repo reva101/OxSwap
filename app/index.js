@@ -3,7 +3,7 @@ import { StyleSheet, View, TextInput, ScrollView, SafeAreaView, TouchableOpacity
 import { Ionicons } from '@expo/vector-icons';
 import Listing from '../components/Listing';
 
-export default function Home() {
+const Home = () => {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.searchContainer}>
@@ -61,3 +61,4 @@ const styles = StyleSheet.create({
   },
 });
 
+export default Home;

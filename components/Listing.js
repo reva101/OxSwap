@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
   listing: {
     flex: 1,
     height: 150,
-    backgroundColor: '#f0f0f0',
+    backgroundColor: '#d6d6d6',
     margin: 5,
     borderRadius: 5,
   },
