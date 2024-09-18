@@ -3,6 +3,7 @@ import { StyleSheet, View, TextInput, ScrollView, SafeAreaView, TouchableOpacity
 import { Ionicons } from '@expo/vector-icons';
 import Listing from '../components/Listing';
 
+
 const Home = () => {
   return (
     <SafeAreaView style={styles.container}>
@@ -32,7 +33,7 @@ const Home = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#FFFFFF',
   },
   searchContainer: {
     flexDirection: 'row',

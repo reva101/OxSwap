@@ -9,7 +9,7 @@ const Layout = () => {
         tabBarIcon: ({ color, size }) => {
           let iconName;
 
-          if (route.name === 'index') {
+          if (route.name === 'Home') {
             iconName = 'home';
             return <AntDesign name={iconName} size={size} color={color} />;
           } else if (route.name === 'Profile') {
