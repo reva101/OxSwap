@@ -1,4 +1,4 @@
-# OxSwap (or formalflip)!!
+# OxSwap !!
 ### _Wear it, Share it_ 😎
 
 Tired of buying expensive dresses or suits to wear once, then throw into the back of your wardrobe?       
